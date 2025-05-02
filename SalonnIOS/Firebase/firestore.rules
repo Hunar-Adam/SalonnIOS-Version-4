@@ -1,0 +1,145 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+    
+    function hasRole(role) {
+      let userDoc = get(/databases/$(database)/documents/users/$(request.auth.uid));
+      return userDoc.data.role == role;
+    }
+    
+    function isAdmin() {
+      return hasRole('admin');
+    }
+    
+    function isSalonOwner() {
+      return hasRole('salonOwner');
+    }
+    
+    function isSalonStaff() {
+      return hasRole('salonStaff');
+    }
+    
+    function isCustomer() {
+      return hasRole('customer');
+    }
+    
+    function isSalonOwnerOf(salonId) {
+      let salonDoc = get(/databases/$(database)/documents/salons/$(salonId));
+      return salonDoc.data.ownerId == request.auth.uid;
+    }
+    
+    function isSalonStaffOf(salonId) {
+      let salonDoc = get(/databases/$(database)/documents/salons/$(salonId));
+      return salonDoc.data.staff.hasAny([request.auth.uid]);
+    }
+    
+    function isAppointmentParticipant(appointmentId) {
+      let appointmentDoc = get(/databases/$(database)/documents/appointments/$(appointmentId));
+      return appointmentDoc.data.customerId == request.auth.uid || 
+             appointmentDoc.data.staffId == request.auth.uid ||
+             isSalonOwnerOf(appointmentDoc.data.salonId);
+    }
+    
+    // User rules
+    match /users/{userId} {
+      // Anyone can create their own profile
+      allow create: if isSignedIn() && isOwner(userId);
+      
+      // Users can read their own data, salon staff can read customer data
+      allow read: if isSignedIn() && (isOwner(userId) || isSalonStaff() || isSalonOwner() || isAdmin());
+      
+      // Users can update their own data, admins can update any user
+      allow update: if isSignedIn() && (isOwner(userId) || isAdmin());
+      
+      // Only admins can delete users
+      allow delete: if isSignedIn() && isAdmin();
+    }
+    
+    // Salon rules
+    match /salons/{salonId} {
+      // Only salon owners and admins can create salons
+      allow create: if isSignedIn() && (isSalonOwner() || isAdmin());
+      
+      // Anyone can read salon information
+      allow read: if true;
+      
+      // Only the salon owner and admins can update
+      allow update: if isSignedIn() && (isSalonOwnerOf(salonId) || isAdmin());
+      
+      // Only admins can delete salons
+      allow delete: if isSignedIn() && isAdmin();
+    }
+    
+    // Service rules
+    match /services/{serviceId} {
+      // Only salon owners can create services
+      allow create: if isSignedIn() && 
+                     (isSalonOwner() || isAdmin()) && 
+                     (isSalonOwnerOf(request.resource.data.salonId) || isAdmin());
+      
+      // Anyone can read service information
+      allow read: if true;
+      
+      // Only the salon owner and admins can update
+      allow update: if isSignedIn() && 
+                     (isSalonOwnerOf(resource.data.salonId) || isAdmin());
+      
+      // Only the salon owner and admins can delete
+      allow delete: if isSignedIn() && 
+                     (isSalonOwnerOf(resource.data.salonId) || isAdmin());
+    }
+    
+    // Appointment rules
+    match /appointments/{appointmentId} {
+      // Any authenticated user can create an appointment
+      allow create: if isSignedIn();
+      
+      // Participants can read their appointments
+      allow read: if isSignedIn() && 
+                   (resource.data.customerId == request.auth.uid || 
+                    resource.data.staffId == request.auth.uid || 
+                    isSalonOwnerOf(resource.data.salonId) || 
+                    isSalonStaffOf(resource.data.salonId) || 
+                    isAdmin());
+      
+      // Participants can update appointments with restrictions
+      allow update: if isSignedIn() && 
+                     (
+                       // Customers can only update certain fields like notes
+                       (resource.data.customerId == request.auth.uid && 
+                        request.resource.data.diff(resource.data).affectedKeys()
+                          .hasOnly(['notes', 'status']) && 
+                        request.resource.data.status == 'cancelled') || 
+                       
+                       // Staff can update status and assign themselves
+                       (isSalonStaffOf(resource.data.salonId) && 
+                        request.resource.data.diff(resource.data).affectedKeys()
+                          .hasOnly(['status', 'staffId', 'staffName', 'notes'])) || 
+                       
+                       // Salon owners can update anything
+                       isSalonOwnerOf(resource.data.salonId) || 
+                       
+                       // Admins can update anything
+                       isAdmin()
+                     );
+      
+      // Only salon owners and admins can delete appointments
+      allow delete: if isSignedIn() && 
+                     (isSalonOwnerOf(resource.data.salonId) || isAdmin());
+    }
+    
+    // Deny access to all other documents
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+} 

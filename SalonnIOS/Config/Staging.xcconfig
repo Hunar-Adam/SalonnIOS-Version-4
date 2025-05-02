@@ -1,0 +1,3 @@
+PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.staging
+API_URL=https://staging.api.salonn.com
+OTHER_SWIFT_FLAGS = -DSTAGING

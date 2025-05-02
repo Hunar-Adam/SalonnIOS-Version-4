@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CD6E10E2DC16A3D0075B80B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E1082DC16A3D0075B80B /* FirebaseDatabase */; };
+		6CD6E10F2DC16A3D0075B80B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E1032DC16A3D0075B80B /* FirebaseAnalytics */; };
+		6CD6E1102DC16A3D0075B80B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E10A2DC16A3D0075B80B /* FirebaseMessaging */; };
+		6CD6E1112DC16A3D0075B80B /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E1072DC16A3D0075B80B /* FirebaseCrashlytics */; };
+		6CD6E1122DC16A3D0075B80B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E1062DC16A3D0075B80B /* FirebaseCore */; };
+		6CD6E1132DC16A3D0075B80B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E10B2DC16A3D0075B80B /* FirebaseStorage */; };
+		6CD6E1142DC16A3D0075B80B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E1052DC16A3D0075B80B /* FirebaseAuth */; };
+		6CD6E1152DC16A3D0075B80B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CD6E1092DC16A3D0075B80B /* FirebaseFirestore */; };
+		6CDBB2E22DC1005C001A0989 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2DC2DC1005C001A0989 /* FirebaseDatabase */; };
+		6CDBB2E32DC1005C001A0989 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2D72DC1005C001A0989 /* FirebaseAnalytics */; };
+		6CDBB2E42DC1005C001A0989 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2DE2DC1005C001A0989 /* FirebaseMessaging */; };
+		6CDBB2E52DC1005C001A0989 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2DB2DC1005C001A0989 /* FirebaseCrashlytics */; };
+		6CDBB2E62DC1005C001A0989 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2DA2DC1005C001A0989 /* FirebaseCore */; };
+		6CDBB2E72DC1005C001A0989 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2DF2DC1005C001A0989 /* FirebaseStorage */; };
+		6CDBB2E82DC1005C001A0989 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2D92DC1005C001A0989 /* FirebaseAuth */; };
+		6CDBB2E92DC1005C001A0989 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2DD2DC1005C001A0989 /* FirebaseFirestore */; };
+		6CDBB2FD2DC10072001A0989 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F72DC10072001A0989 /* FirebaseDatabase */; };
+		6CDBB2FE2DC10072001A0989 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F22DC10072001A0989 /* FirebaseAnalytics */; };
+		6CDBB2FF2DC10072001A0989 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F92DC10072001A0989 /* FirebaseMessaging */; };
+		6CDBB3002DC10072001A0989 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F62DC10072001A0989 /* FirebaseCrashlytics */; };
+		6CDBB3012DC10072001A0989 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F52DC10072001A0989 /* FirebaseCore */; };
+		6CDBB3022DC10072001A0989 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2FA2DC10072001A0989 /* FirebaseStorage */; };
+		6CDBB3032DC10072001A0989 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F42DC10072001A0989 /* FirebaseAuth */; };
+		6CDBB3042DC10072001A0989 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CDBB2F82DC10072001A0989 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CD6DF782DC12D0D0075B80B /* SalonnIOS Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SalonnIOS Dev.entitlements"; sourceTree = "<group>"; };
+		6CD6DF792DC12D290075B80B /* SalonnIOS-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SalonnIOS-Dev-Info.plist"; sourceTree = "<group>"; };
+		6CD6E11B2DC16A3D0075B80B /* SalonnIOS Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SalonnIOS Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD6E11D2DC16A3D0075B80B /* SalonnIOS Dev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SalonnIOS Dev copy-Info.plist"; path = "/Users/hunaradam/Desktop/SalonnIOS/SalonnIOS Dev copy-Info.plist"; sourceTree = "<absolute>"; };
+		6CDBB2EF2DC1005C001A0989 /* SalonnIOS Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SalonnIOS Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDBB30A2DC10072001A0989 /* SalonnIOS Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SalonnIOS Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6CD6E11C2DC16A3D0075B80B /* Exceptions for "SalonnIOS" folder in "SalonnIOS Prod" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Config/Dev.xcconfig,
+				Config/Prod.xcconfig,
+				Config/Staging.xcconfig,
+				CopyGoogleServiceInfo.sh,
+				switch_env.sh,
+			);
+			target = 6CD6E1022DC16A3D0075B80B /* SalonnIOS Prod */;
+		};
+		6CDBB2F02DC1005C001A0989 /* Exceptions for "SalonnIOS" folder in "SalonnIOS Dev" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Config/Dev.xcconfig,
+				Config/Prod.xcconfig,
+				Config/Staging.xcconfig,
+				CopyGoogleServiceInfo.sh,
+				switch_env.sh,
+			);
+			target = 6CDBB2D62DC1005C001A0989 /* SalonnIOS Dev */;
+		};
+		6CDBB30B2DC10072001A0989 /* Exceptions for "SalonnIOS" folder in "SalonnIOS Stage" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Config/Dev.xcconfig,
+				Config/Prod.xcconfig,
+				Config/Staging.xcconfig,
+				CopyGoogleServiceInfo.sh,
+				switch_env.sh,
+			);
+			target = 6CDBB2F12DC10072001A0989 /* SalonnIOS Stage */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6CDBB2F02DC1005C001A0989 /* Exceptions for "SalonnIOS" folder in "SalonnIOS Dev" target */,
+				6CDBB30B2DC10072001A0989 /* Exceptions for "SalonnIOS" folder in "SalonnIOS Stage" target */,
+				6CD6E11C2DC16A3D0075B80B /* Exceptions for "SalonnIOS" folder in "SalonnIOS Prod" target */,
+			);
+			path = SalonnIOS;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CD6E10D2DC16A3D0075B80B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD6E10E2DC16A3D0075B80B /* FirebaseDatabase in Frameworks */,
+				6CD6E10F2DC16A3D0075B80B /* FirebaseAnalytics in Frameworks */,
+				6CD6E1102DC16A3D0075B80B /* FirebaseMessaging in Frameworks */,
+				6CD6E1112DC16A3D0075B80B /* FirebaseCrashlytics in Frameworks */,
+				6CD6E1122DC16A3D0075B80B /* FirebaseCore in Frameworks */,
+				6CD6E1132DC16A3D0075B80B /* FirebaseStorage in Frameworks */,
+				6CD6E1142DC16A3D0075B80B /* FirebaseAuth in Frameworks */,
+				6CD6E1152DC16A3D0075B80B /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDBB2E12DC1005C001A0989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDBB2E22DC1005C001A0989 /* FirebaseDatabase in Frameworks */,
+				6CDBB2E32DC1005C001A0989 /* FirebaseAnalytics in Frameworks */,
+				6CDBB2E42DC1005C001A0989 /* FirebaseMessaging in Frameworks */,
+				6CDBB2E52DC1005C001A0989 /* FirebaseCrashlytics in Frameworks */,
+				6CDBB2E62DC1005C001A0989 /* FirebaseCore in Frameworks */,
+				6CDBB2E72DC1005C001A0989 /* FirebaseStorage in Frameworks */,
+				6CDBB2E82DC1005C001A0989 /* FirebaseAuth in Frameworks */,
+				6CDBB2E92DC1005C001A0989 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDBB2FC2DC10072001A0989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDBB2FD2DC10072001A0989 /* FirebaseDatabase in Frameworks */,
+				6CDBB2FE2DC10072001A0989 /* FirebaseAnalytics in Frameworks */,
+				6CDBB2FF2DC10072001A0989 /* FirebaseMessaging in Frameworks */,
+				6CDBB3002DC10072001A0989 /* FirebaseCrashlytics in Frameworks */,
+				6CDBB3012DC10072001A0989 /* FirebaseCore in Frameworks */,
+				6CDBB3022DC10072001A0989 /* FirebaseStorage in Frameworks */,
+				6CDBB3032DC10072001A0989 /* FirebaseAuth in Frameworks */,
+				6CDBB3042DC10072001A0989 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CE8E6012DC00B6600F3FF89 = {
+			isa = PBXGroup;
+			children = (
+				6CD6DF792DC12D290075B80B /* SalonnIOS-Dev-Info.plist */,
+				6CD6DF782DC12D0D0075B80B /* SalonnIOS Dev.entitlements */,
+				6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */,
+				6CD6E11D2DC16A3D0075B80B /* SalonnIOS Dev copy-Info.plist */,
+				6CE8E60B2DC00B6600F3FF89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CE8E60B2DC00B6600F3FF89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CDBB2EF2DC1005C001A0989 /* SalonnIOS Dev.app */,
+				6CDBB30A2DC10072001A0989 /* SalonnIOS Stage.app */,
+				6CD6E11B2DC16A3D0075B80B /* SalonnIOS Prod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CD6E1022DC16A3D0075B80B /* SalonnIOS Prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CD6E1172DC16A3D0075B80B /* Build configuration list for PBXNativeTarget "SalonnIOS Prod" */;
+			buildPhases = (
+				6CD6E10C2DC16A3D0075B80B /* Sources */,
+				6CD6E10D2DC16A3D0075B80B /* Frameworks */,
+				6CD6E1162DC16A3D0075B80B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */,
+			);
+			name = "SalonnIOS Prod";
+			packageProductDependencies = (
+				6CD6E1032DC16A3D0075B80B /* FirebaseAnalytics */,
+				6CD6E1052DC16A3D0075B80B /* FirebaseAuth */,
+				6CD6E1062DC16A3D0075B80B /* FirebaseCore */,
+				6CD6E1072DC16A3D0075B80B /* FirebaseCrashlytics */,
+				6CD6E1082DC16A3D0075B80B /* FirebaseDatabase */,
+				6CD6E1092DC16A3D0075B80B /* FirebaseFirestore */,
+				6CD6E10A2DC16A3D0075B80B /* FirebaseMessaging */,
+				6CD6E10B2DC16A3D0075B80B /* FirebaseStorage */,
+			);
+			productName = SalonnIOS;
+			productReference = 6CD6E11B2DC16A3D0075B80B /* SalonnIOS Prod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CDBB2D62DC1005C001A0989 /* SalonnIOS Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDBB2EB2DC1005C001A0989 /* Build configuration list for PBXNativeTarget "SalonnIOS Dev" */;
+			buildPhases = (
+				6CDBB2E02DC1005C001A0989 /* Sources */,
+				6CDBB2E12DC1005C001A0989 /* Frameworks */,
+				6CDBB2EA2DC1005C001A0989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */,
+			);
+			name = "SalonnIOS Dev";
+			packageProductDependencies = (
+				6CDBB2D72DC1005C001A0989 /* FirebaseAnalytics */,
+				6CDBB2D92DC1005C001A0989 /* FirebaseAuth */,
+				6CDBB2DA2DC1005C001A0989 /* FirebaseCore */,
+				6CDBB2DB2DC1005C001A0989 /* FirebaseCrashlytics */,
+				6CDBB2DC2DC1005C001A0989 /* FirebaseDatabase */,
+				6CDBB2DD2DC1005C001A0989 /* FirebaseFirestore */,
+				6CDBB2DE2DC1005C001A0989 /* FirebaseMessaging */,
+				6CDBB2DF2DC1005C001A0989 /* FirebaseStorage */,
+			);
+			productName = SalonnIOS;
+			productReference = 6CDBB2EF2DC1005C001A0989 /* SalonnIOS Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CDBB2F12DC10072001A0989 /* SalonnIOS Stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CDBB3062DC10072001A0989 /* Build configuration list for PBXNativeTarget "SalonnIOS Stage" */;
+			buildPhases = (
+				6CDBB2FB2DC10072001A0989 /* Sources */,
+				6CDBB2FC2DC10072001A0989 /* Frameworks */,
+				6CDBB3052DC10072001A0989 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */,
+			);
+			name = "SalonnIOS Stage";
+			packageProductDependencies = (
+				6CDBB2F22DC10072001A0989 /* FirebaseAnalytics */,
+				6CDBB2F42DC10072001A0989 /* FirebaseAuth */,
+				6CDBB2F52DC10072001A0989 /* FirebaseCore */,
+				6CDBB2F62DC10072001A0989 /* FirebaseCrashlytics */,
+				6CDBB2F72DC10072001A0989 /* FirebaseDatabase */,
+				6CDBB2F82DC10072001A0989 /* FirebaseFirestore */,
+				6CDBB2F92DC10072001A0989 /* FirebaseMessaging */,
+				6CDBB2FA2DC10072001A0989 /* FirebaseStorage */,
+			);
+			productName = SalonnIOS;
+			productReference = 6CDBB30A2DC10072001A0989 /* SalonnIOS Stage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CE8E6022DC00B6600F3FF89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+			};
+			buildConfigurationList = 6CE8E6052DC00B6600F3FF89 /* Build configuration list for PBXProject "SalonnIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CE8E6012DC00B6600F3FF89;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6CDBB2C52DC07076001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6CE8E60B2DC00B6600F3FF89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CDBB2D62DC1005C001A0989 /* SalonnIOS Dev */,
+				6CDBB2F12DC10072001A0989 /* SalonnIOS Stage */,
+				6CD6E1022DC16A3D0075B80B /* SalonnIOS Prod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CD6E1162DC16A3D0075B80B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDBB2EA2DC1005C001A0989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDBB3052DC10072001A0989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CD6E10C2DC16A3D0075B80B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDBB2E02DC1005C001A0989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CDBB2FB2DC10072001A0989 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6CD6E1182DC16A3D0075B80B /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Dev.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SalonnIOS Dev.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SalonnIOS Dev copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Slaonn;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Dev;
+		};
+		6CD6E1192DC16A3D0075B80B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Staging.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SalonnIOS Dev.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SalonnIOS Dev copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Slaonn;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		6CD6E11A2DC16A3D0075B80B /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Prod.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SalonnIOS Dev.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SalonnIOS Dev copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Slaonn;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Prod;
+		};
+		6CDBB2EC2DC1005C001A0989 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Dev.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SalonnIOS Dev.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SalonnIOS-Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Slaonn Dev";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Dev;
+		};
+		6CDBB2ED2DC1005C001A0989 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Staging.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SalonnIOS Dev.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SalonnIOS-Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Slaonn Dev";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		6CDBB2EE2DC1005C001A0989 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Prod.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SalonnIOS Dev.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SalonnIOS-Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Slaonn Dev";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Prod;
+		};
+		6CDBB3072DC10072001A0989 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Dev.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Salonn Stage";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Dev;
+		};
+		6CDBB3082DC10072001A0989 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Staging.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Salonn Stage";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		6CDBB3092DC10072001A0989 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Prod.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Salonn Stage";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Prod;
+		};
+		6CE049952DC0138800C62626 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Staging.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		6CE8E6132DC00B6700F3FF89 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Dev.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Dev;
+		};
+		6CE8E6142DC00B6700F3FF89 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 6CE8E60C2DC00B6600F3FF89 /* SalonnIOS */;
+			baseConfigurationReferenceRelativePath = Config/Prod.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 543CCJYGG5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Prod;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CD6E1172DC16A3D0075B80B /* Build configuration list for PBXNativeTarget "SalonnIOS Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CD6E1182DC16A3D0075B80B /* Dev */,
+				6CD6E1192DC16A3D0075B80B /* Staging */,
+				6CD6E11A2DC16A3D0075B80B /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+		6CDBB2EB2DC1005C001A0989 /* Build configuration list for PBXNativeTarget "SalonnIOS Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDBB2EC2DC1005C001A0989 /* Dev */,
+				6CDBB2ED2DC1005C001A0989 /* Staging */,
+				6CDBB2EE2DC1005C001A0989 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+		6CDBB3062DC10072001A0989 /* Build configuration list for PBXNativeTarget "SalonnIOS Stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CDBB3072DC10072001A0989 /* Dev */,
+				6CDBB3082DC10072001A0989 /* Staging */,
+				6CDBB3092DC10072001A0989 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+		6CE8E6052DC00B6600F3FF89 /* Build configuration list for PBXProject "SalonnIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE8E6132DC00B6700F3FF89 /* Dev */,
+				6CE049952DC0138800C62626 /* Staging */,
+				6CE8E6142DC00B6700F3FF89 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		6CDBB2C52DC07076001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+		6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CD6E1032DC16A3D0075B80B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6CD6E1052DC16A3D0075B80B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6CD6E1062DC16A3D0075B80B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		6CD6E1072DC16A3D0075B80B /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6CD6E1082DC16A3D0075B80B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6CD6E1092DC16A3D0075B80B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6CD6E10A2DC16A3D0075B80B /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6CD6E10B2DC16A3D0075B80B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CD6E1042DC16A3D0075B80B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		6CDBB2D72DC1005C001A0989 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6CDBB2D92DC1005C001A0989 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6CDBB2DA2DC1005C001A0989 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		6CDBB2DB2DC1005C001A0989 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6CDBB2DC2DC1005C001A0989 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6CDBB2DD2DC1005C001A0989 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6CDBB2DE2DC1005C001A0989 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6CDBB2DF2DC1005C001A0989 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2D82DC1005C001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		6CDBB2F22DC10072001A0989 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6CDBB2F42DC10072001A0989 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6CDBB2F52DC10072001A0989 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		6CDBB2F62DC10072001A0989 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6CDBB2F72DC10072001A0989 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6CDBB2F82DC10072001A0989 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6CDBB2F92DC10072001A0989 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6CDBB2FA2DC10072001A0989 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CDBB2F32DC10072001A0989 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6CE8E6022DC00B6600F3FF89 /* Project object */;
+}

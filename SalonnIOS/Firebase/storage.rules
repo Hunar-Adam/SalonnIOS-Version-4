@@ -1,0 +1,77 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isUserAuthenticated(userId) {
+      return request.auth.uid == userId;
+    }
+    
+    function isImageFile() {
+      return request.resource.contentType.matches('image/.*');
+    }
+    
+    function fileSizeUnder(maxSizeMB) {
+      return request.resource.size < maxSizeMB * 1024 * 1024;
+    }
+    
+    // Profile Images - users can only upload their own profile images
+    match /profile_images/{userId}.jpg {
+      allow read: if true; // Anyone can view profile images
+      allow write: if isSignedIn() && 
+                     isUserAuthenticated(userId) && 
+                     isImageFile() && 
+                     fileSizeUnder(5);
+    }
+    
+    // Salon Images
+    match /salon_images/{fileName} {
+      // Extract salonId from the filename (format: salonId_*.jpg)
+      function getSalonId() {
+        return fileName.split('_')[0];
+      }
+      
+      function isSalonOwner(salonId) {
+        return firestore.get(/databases/(default)/documents/salons/$(salonId)).data.ownerId == request.auth.uid;
+      }
+      
+      // Anyone can view salon images
+      allow read: if true;
+      
+      // Only salon owners can upload images for their salons
+      allow write: if isSignedIn() && 
+                     isSalonOwner(getSalonId()) && 
+                     isImageFile() && 
+                     fileSizeUnder(10);
+    }
+    
+    // Service Images
+    match /service_images/{serviceId}.jpg {
+      function getSalonIdForService() {
+        return firestore.get(/databases/(default)/documents/services/$(serviceId)).data.salonId;
+      }
+      
+      function isSalonOwner(salonId) {
+        return firestore.get(/databases/(default)/documents/salons/$(salonId)).data.ownerId == request.auth.uid;
+      }
+      
+      // Anyone can view service images
+      allow read: if true;
+      
+      // Only salon owners can upload images for their services
+      allow write: if isSignedIn() && 
+                     isSalonOwner(getSalonIdForService()) && 
+                     isImageFile() && 
+                     fileSizeUnder(5);
+    }
+    
+    // Deny access to all other files
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+} 

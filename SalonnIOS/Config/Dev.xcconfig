@@ -1,0 +1,3 @@
+PRODUCT_BUNDLE_IDENTIFIER = com.sanmedia.SalonnIOS.dev
+API_URL=https://dev.api.salonn.com
+OTHER_SWIFT_FLAGS = -DDEBUG
